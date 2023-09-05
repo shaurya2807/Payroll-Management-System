@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void revstr(int arr[],int start,int end)
+{
+    int temp;
+    while(start<end)
+    {
+        temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+}
+
+int main()
+{
+    int i,start,end,arr[10];
+    printf("enter the number of elements in array i.e start end\n");
+    scanf("start:%d\n",&start);
+    scanf("end:%d\n",&end);
+    printf("enter the elements:\n");
+    for(i=start;i<end;i++)
+     {
+        scanf("%d\n",&arr[i]);
+     }
+}
